@@ -88,8 +88,7 @@ public class Operation {
                         break;
                 }
             } else {
-                changingOneOperation(operationList, changeCount + 1);
-                System.out.println("new");
+                return changingOneOperation(operationList, changeCount + 1);
             }
         }
 
