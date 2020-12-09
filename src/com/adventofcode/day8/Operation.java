@@ -1,5 +1,6 @@
 package com.adventofcode.day8;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Operation {
@@ -52,44 +53,36 @@ public class Operation {
                     i++;
                     break;
             }
+            if (i >= operationList.size()) {
+                return acc;
+            }
         }
 
-        return acc;
+        return -1;
     }
 
-    public int changingOneOperation(List<Operation> operationList, int changeCount) {
+    public int changingOneOperation(List<Operation> operationList) {
         int acc = 0;
-        boolean[] usedOperations = new boolean[operationList.size()];
         int i = 0;
-        int changedPosition = 0;
         while (i < operationList.size()) {
-            if (!usedOperations[i]) {
-                if (changedPosition == changeCount && operationList.get(i).getOperation().equals("nop")) {
-                    operationList.get(i).setOperation("jmp");
-                }
-                if (changedPosition == changeCount && operationList.get(i).getOperation().equals("jmp")) {
-                    operationList.get(i).setOperation("nop");
-                }
-                switch (operationList.get(i).getOperation()) {
-                    case "acc":
-                        acc += operationList.get(i).getValue();
-                        usedOperations[i] = true;
-                        i++;
-                        break;
-                    case "jmp":
-                        changedPosition++;
-                        usedOperations[i] = true;
-                        i += operationList.get(i).getValue();
-                        break;
-                    case "nop":
-                        changedPosition++;
-                        usedOperations[i] = true;
-                        i++;
-                        break;
-                }
-            } else {
-                return changingOneOperation(operationList, changeCount + 1);
+            Operation currentOperational = operationList.get(i);
+            String original = currentOperational.getOperation();
+            if (currentOperational.getOperation().equals("nop")) {
+                List<Operation> operationListCopied = new ArrayList<>(operationList);
+                currentOperational.setOperation("jmp");
+                int sum = calculateTheAcc(operationListCopied);
+                if (sum != -1)
+                    return sum;
             }
+            if (currentOperational.getOperation().equals("jmp")) {
+                List<Operation> operationListCopied = new ArrayList<>(operationList);
+                currentOperational.setOperation("nop");
+                int sum = calculateTheAcc(operationListCopied);
+                if (sum != -1)
+                    return sum;
+            }
+            i++;
+            currentOperational.setOperation(original);
         }
 
         return acc;

@@ -21,7 +21,7 @@ public class Main {
 
             Operation operation = new Operation("", 0);
             System.out.println(operation.calculateTheAcc(operations));
-            System.out.println(operation.changingOneOperation(operations, 0));
+            System.out.println(operation.changingOneOperation(operations));
         }
     }
 
