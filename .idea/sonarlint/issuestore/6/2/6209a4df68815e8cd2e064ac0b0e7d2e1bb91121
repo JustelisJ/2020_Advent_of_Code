@@ -1,2 +1,4 @@
 
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(îø¬«ùÿÿÿÿ8Ù„Ãôã.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(œøºÇ8Û‹©Ää.
+J
+java:S1481"-Remove this unused "bagRules" local variable.(å•Ñ¹8¸ö«Âä.
