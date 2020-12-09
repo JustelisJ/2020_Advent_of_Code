@@ -19,8 +19,6 @@ e
 5out/production/2020_Advent_of_Code2/resource/day7.txt,7/b/7b72ef28f5ac30b135ae0a55c3a4e3dd7e98c17f
 \
 ,out/production/2020_Advent_of_Code2/day7.txt,7/3/7397c4bf1598200985eb616661aa8fb16035bb2c
-E
-src/resource/day7.txt,5/1/51dba674db681154442a40a6dc6287554b07cfa1
 e
 5out/production/2020_Advent_of_Code2/resource/day8.txt,5/3/532b57ba050229d288dd326609061233c097d8bc
 \

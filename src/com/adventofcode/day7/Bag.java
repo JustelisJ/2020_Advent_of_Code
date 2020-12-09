@@ -2,7 +2,7 @@ package com.adventofcode.day7;
 
 public class Bag {
 
-    public static final Bag SHINY_GOLD = new Bag("shiny gold", 0);
+    public static Bag emptyBag = new Bag("", 0);
 
     public String color;
     public int amount;
