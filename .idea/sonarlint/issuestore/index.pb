@@ -49,3 +49,7 @@ X
 ,src/com/adventofcode/day9/EncodingError.java,5/e/5e6e539ad9418ed22f723bcac339aee8d86a0129
 S
 #src/com/adventofcode/day9/Main.java,b/3/b32bd2871464561be9bb285742098af958cad8d1
+\
+,src/com/adventofcode/day10/AdapterArray.java,e/0/e05ba5e40df60612af921641eb7880a12ab3fde0
+T
+$src/com/adventofcode/day10/Main.java,2/2/221a6c1e428fba1fe6c6f5b2feba4e207f60dc28
