@@ -53,3 +53,15 @@ S
 ,src/com/adventofcode/day10/AdapterArray.java,e/0/e05ba5e40df60612af921641eb7880a12ab3fde0
 T
 $src/com/adventofcode/day10/Main.java,2/2/221a6c1e428fba1fe6c6f5b2feba4e207f60dc28
+B
+src/resource/day11,9/a/9a45c9b27b2b1b62f2a4e9c2d27bd21b5a3d4b8f
+]
+-src/com/adventofcode/day11/SeatingSystem.java,d/c/dc1f1e6debf9933b5e52f25fd8f4ead036bd490a
+T
+$src/com/adventofcode/day11/Main.java,2/0/20fd1cf513876c22ab9c1b283628ddacc80ad82c
+T
+$src/com/adventofcode/day12/Main.java,4/7/4768c10afff8cfb20b784a7ef39ee6f09867a919
+e
+5src/com/adventofcode/day12/NavigationInstruction.java,4/9/49c2e516959b852b37d3e65d206312a63f7b8092
+X
+(src/com/adventofcode/day12/RainRisk.java,7/7/776d2d746728b2b68e5eab15661f87ec83754020
