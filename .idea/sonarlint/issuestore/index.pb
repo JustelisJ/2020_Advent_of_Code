@@ -65,3 +65,5 @@ e
 5src/com/adventofcode/day12/NavigationInstruction.java,4/9/49c2e516959b852b37d3e65d206312a63f7b8092
 X
 (src/com/adventofcode/day12/RainRisk.java,7/7/776d2d746728b2b68e5eab15661f87ec83754020
+]
+-test/com/adventofcode/day12/RainRiskTest.java,2/f/2ffd53a6be0698b6ef011b18a24602ad0594f987
