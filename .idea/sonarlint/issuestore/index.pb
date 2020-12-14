@@ -67,3 +67,9 @@ X
 (src/com/adventofcode/day12/RainRisk.java,7/7/776d2d746728b2b68e5eab15661f87ec83754020
 ]
 -test/com/adventofcode/day12/RainRiskTest.java,2/f/2ffd53a6be0698b6ef011b18a24602ad0594f987
+F
+src/resource/day13.txt,b/4/b4a0956d2569a3b914a7a85054e959d6912f8ab9
+T
+$src/com/adventofcode/day13/Main.java,9/b/9bfcdeccf542b6a156150107a87370723dccbbb4
+]
+-src/com/adventofcode/day13/ShuttleSearch.java,4/9/493178ad9ee1d74151724983ca8fac5e19d2f108
