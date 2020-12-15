@@ -96,4 +96,9 @@ class RainRiskTest {
         instructions.add(new NavigationInstruction('F', 10));
         assertEquals(110, RainRisk.XandYCoordinateSumWithWaypoint(instructions));
     }
+
+    @Test
+    void rotateLeftThenRightAndStayTheSame() {
+        
+    }
 }
