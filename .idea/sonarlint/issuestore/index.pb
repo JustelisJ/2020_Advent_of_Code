@@ -77,3 +77,13 @@ V
 &src/com/adventofcode/day14/Memory.java,6/6/66d524a005bb5880a3cd258dae88a01cae3bd9d9
 T
 $src/com/adventofcode/day14/Main.java,8/e/8eee74235f335cd70a457e70cbc5c89115f20bf0
+F
+src/resource/day15.txt,e/7/e7f39bc35bf5a406a88f4dbbb5500ae81f1adc3e
+T
+$src/com/adventofcode/day15/Main.java,d/1/d18965e5b92a1cc069c66b561eec55557b4bb8b9
+f
+6src/com/adventofcode/day15/RambunctiousRecitation.java,2/8/281df9f441d40b202b581db12b0d50c0f63b211d
+T
+$src/com/adventofcode/day16/Main.java,3/1/314d83510c9268b737edd21997b90b131503e9d0
+a
+1src/com/adventofcode/day16/TicketTranslation.java,b/d/bd3765df632cb6ba7e774dec23291632014f0e42
