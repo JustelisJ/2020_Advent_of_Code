@@ -22,6 +22,8 @@ public class Main {
             xyz.add(xy);
         }
 
+        List<List<List<Character>>> xyzCopy = ConwayCubes.copy3DMap(xyz);
+
         System.out.println("initial count: " + ConwayCubes.countActiveCubes(xyz));
         xyz = ConwayCubes.cycle(xyz);
 
@@ -39,8 +41,32 @@ public class Main {
 
         System.out.println("5 cycle: " + ConwayCubes.countActiveCubes(xyz));
         xyz = ConwayCubes.cycle(xyz);
-        
+
         System.out.println("6 cycle: " + ConwayCubes.countActiveCubes(xyz));
+
+        System.out.println("-----------");
+
+        List<List<List<List<Character>>>> xyzw = new ArrayList<>();
+        xyzw.add(xyzCopy);
+        System.out.println("initial count: " + ConwayCubes.countActiveCubes4D(xyzw));
+        xyzw = ConwayCubes.cycle4D(xyzw);
+
+        System.out.println("1 cycle: " + ConwayCubes.countActiveCubes4D(xyzw));
+//        xyzw = ConwayCubes.cycle4D(xyzw);
+//
+//        System.out.println("2 cycle: " + ConwayCubes.countActiveCubes4D(xyzw));
+//        xyzw = ConwayCubes.cycle4D(xyzw);
+//
+//        System.out.println("3 cycle: " + ConwayCubes.countActiveCubes4D(xyzw));
+//        xyzw = ConwayCubes.cycle4D(xyzw);
+//
+//        System.out.println("4 cycle: " + ConwayCubes.countActiveCubes4D(xyzw));
+//        xyzw = ConwayCubes.cycle4D(xyzw);
+//
+//        System.out.println("5 cycle: " + ConwayCubes.countActiveCubes4D(xyzw));
+//        xyzw = ConwayCubes.cycle4D(xyzw);
+//
+//        System.out.println("6 cycle: " + ConwayCubes.countActiveCubes4D(xyzw));
     }
 
 }

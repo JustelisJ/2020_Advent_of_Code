@@ -5,6 +5,16 @@ import java.util.List;
 
 public class ConwayCubes {
 
+    public static int countActiveCubes4D(List<List<List<List<Character>>>> map4D) {
+        int count = 0;
+
+        for (List<List<List<Character>>> w : map4D) {
+            count += countActiveCubes(w);
+        }
+
+        return count;
+    }
+
     public static int countActiveCubes(List<List<List<Character>>> map3D) {
         int count = 0;
 
@@ -19,6 +29,52 @@ public class ConwayCubes {
         }
 
         return count;
+    }
+
+    public static List<List<List<List<Character>>>> cycle4D(List<List<List<List<Character>>>> map4D) {
+        //Enlarge map3D with inactive points
+        enlargeMap4D(map4D);
+
+        List<List<List<List<Character>>>> map4DCopy = copy4DMap(map4D);
+
+        for (int w = 0; w < map4DCopy.size(); w++) {
+            //TODO: how?
+        }
+
+        return map4DCopy;
+    }
+
+    private static List<List<List<List<Character>>>> copy4DMap(List<List<List<List<Character>>>> map4D) {
+        List<List<List<List<Character>>>> map4DCopy = new ArrayList<>();
+        for (List<List<List<Character>>> map3D : map4D) {
+            map4DCopy.add(copy3DMap(map3D));
+        }
+        return map4DCopy;
+    }
+
+    private static void enlargeMap4D(List<List<List<List<Character>>>> map4D) {
+
+        //x axis size
+        int currentCubeSize = map4D.get(0).size();
+        for (List<List<List<Character>>> map3D : map4D) {
+            enlargeMap(map3D);
+        }
+
+        List<Character> empty1DMap = new ArrayList<>();
+        for (int i = 0; i < currentCubeSize + 2; i++) {
+            empty1DMap.add('.');
+        }
+        List<List<Character>> empty2DMap = new ArrayList<>();
+        for (int i = 0; i < currentCubeSize + 2; i++) {
+            empty2DMap.add(empty1DMap);
+        }
+        List<List<List<Character>>> empty3DMap = new ArrayList<>();
+        for (int i = 0; i < currentCubeSize + 2; i++) {
+            empty3DMap.add(empty2DMap);
+        }
+        map4D.add(map4D.size(), empty3DMap);
+        map4D.add(0, empty3DMap);
+
     }
 
     public static List<List<List<Character>>> cycle(List<List<List<Character>>> map3D) {
@@ -74,7 +130,7 @@ public class ConwayCubes {
         map3D.add(0, empty2DMap);
     }
 
-    private static List<List<List<Character>>> copy3DMap(List<List<List<Character>>> map3D) {
+    public static List<List<List<Character>>> copy3DMap(List<List<List<Character>>> map3D) {
         List<List<List<Character>>> map3DCopy = new ArrayList<>();
 
         for (List<List<Character>> z : map3D) {
