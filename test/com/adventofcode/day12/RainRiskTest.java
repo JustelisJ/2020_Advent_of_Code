@@ -99,6 +99,24 @@ class RainRiskTest {
 
     @Test
     void rotateLeftThenRightAndStayTheSame() {
-        
+        Coordinate coordinate = new Coordinate(1, 3);
+
+        Coordinate.rotateLeft(coordinate, 90);
+        Coordinate.rotateRight(coordinate, 90);
+
+        assertEquals(1, coordinate.x);
+        assertEquals(3, coordinate.y);
+
+        Coordinate.rotateLeft(coordinate, 180);
+        Coordinate.rotateRight(coordinate, 180);
+
+        assertEquals(1, coordinate.x);
+        assertEquals(3, coordinate.y);
+
+        Coordinate.rotateLeft(coordinate, 270);
+        Coordinate.rotateRight(coordinate, 270);
+
+        assertEquals(1, coordinate.x);
+        assertEquals(3, coordinate.y);
     }
 }
