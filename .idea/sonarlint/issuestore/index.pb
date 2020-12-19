@@ -87,3 +87,13 @@ T
 $src/com/adventofcode/day16/Main.java,3/1/314d83510c9268b737edd21997b90b131503e9d0
 a
 1src/com/adventofcode/day16/TicketTranslation.java,b/d/bd3765df632cb6ba7e774dec23291632014f0e42
+`
+0test/com/adventofcode/day17/ConwayCubesTest.java,1/6/16dbfcceef7d815d77648db90ce18f3e1eab015a
+T
+$src/com/adventofcode/day17/Main.java,8/f/8f7e1a5f9337b8e925483070733c53dd7bf1a25f
+[
++src/com/adventofcode/day17/ConwayCubes.java,7/e/7e0ddbd4a1e6814ee4bd534a5a993174078241fc
+T
+$src/com/adventofcode/day18/Main.java,c/7/c7191411564058e864ca6efa707c98b846edcc4c
+`
+0src/com/adventofcode/day18/OperationOfOrder.java,5/e/5efceb18d3c3dade40334301eca69e2e49a842be
