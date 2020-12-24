@@ -117,3 +117,7 @@ T
 $src/com/adventofcode/day23/Main.java,0/f/0fd826daa8e734da0c029961ce64993ca66d318e
 X
 (src/com/adventofcode/day23/CrabCups.java,3/e/3ec9448205e88f97189e686967b0d67ad6ddd57f
+F
+src/resource/day19.txt,0/c/0c2e55aa971a5e0e1013e4008b1c3908ea26dd7f
+F
+src/resource/day23.txt,b/f/bf8f74b1311f78657ff5db75795772181eacef9e

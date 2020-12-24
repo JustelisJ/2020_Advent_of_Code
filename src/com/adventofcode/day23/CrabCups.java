@@ -7,12 +7,12 @@ import java.util.List;
 
 public class CrabCups {
 
-    public static String moveCups(List<Integer> cupListOriginal) {
+    public static String moveCups(List<Integer> cupListOriginal, int times) {
         LinkedList<Integer> cupList = new LinkedList<>(cupListOriginal);
         int highestValue = cupList.stream().max(Comparator.naturalOrder()).get();
         int zeroIndex = 0;
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < times; i++) {
             int currentCupNumber = cupList.remove(zeroIndex);
             int destinationIndex = 0;
             List<Integer> next3Cups = getNextThreeCups(cupList, zeroIndex);
@@ -24,12 +24,15 @@ public class CrabCups {
                     currectCupNumberCheck = highestValue + 1;
                     j = 1;
                 }
-                if (cupList.contains((currectCupNumberCheck - j))) {
+                if (!next3Cups.contains((currectCupNumberCheck - j))) {
                     destinationIndex = cupList.indexOf((currectCupNumberCheck - j)) + 1;
                     j = 0;
                 } else {
                     j++;
                 }
+            }
+            if (i % 1000 == 0) {
+                System.out.printf("%dth cycle%n", i);
             }
 
             cupList.addAll(destinationIndex, next3Cups);
@@ -38,9 +41,8 @@ public class CrabCups {
 
         String cupListAsString = cupList.toString().replace(", ", "");
         cupListAsString = cupListAsString.substring(1, cupListAsString.length() - 1);
-        String answer = String.format("%s%s", cupListAsString.substring(cupListAsString.indexOf("1") + 1),
+        return String.format("%s%s", cupListAsString.substring(cupListAsString.indexOf("1") + 1),
                 cupListAsString.substring(0, cupListAsString.indexOf("1")));
-        return answer;
     }
 
     private static List<Integer> getNextThreeCups(List<Integer> cupList, int currentCupIndex) {
@@ -49,6 +51,14 @@ public class CrabCups {
         nextThreeCups.add(cupList.remove(currentCupIndex));
         nextThreeCups.add(cupList.remove(currentCupIndex));
         return nextThreeCups;
+    }
+
+    public static List<Integer> inflateListToMillion(List<Integer> cupList) {
+        for (int i = cupList.size(); i < 1000000; i++) {
+            cupList.add(i);
+        }
+
+        return cupList;
     }
 
 }

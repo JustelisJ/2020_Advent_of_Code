@@ -21,7 +21,10 @@ public class Main {
             cupList.add(Integer.valueOf(String.valueOf(cupNumber)));
         }
 
-        System.out.println(CrabCups.moveCups(cupList));
+        System.out.println(CrabCups.moveCups(cupList, 10));
+
+        cupList = CrabCups.inflateListToMillion(cupList);
+        System.out.println(CrabCups.moveCups(cupList, 10000000));
     }
 
 }
