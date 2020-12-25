@@ -19,6 +19,8 @@ public class Main {
         }
 
         System.out.println(LobbyLayout.countBlackTilesAfterIntructions(tileFlipIntructions));
+        System.out.println(LobbyLayout.blackTileCountAfter100Days(tileFlipIntructions));
+
     }
 
 }

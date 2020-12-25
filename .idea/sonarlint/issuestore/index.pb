@@ -121,3 +121,13 @@ F
 src/resource/day19.txt,0/c/0c2e55aa971a5e0e1013e4008b1c3908ea26dd7f
 F
 src/resource/day23.txt,b/f/bf8f74b1311f78657ff5db75795772181eacef9e
+U
+%src/com/adventofcode/day24/Color.java,2/2/22f8c86c722a3bcaed98598fe78238d783608888
+Z
+*src/com/adventofcode/day24/Coordinate.java,d/6/d63b6c6e9c3bd4fc7af604ffd0a627aa7adb9c95
+Z
+*src/com/adventofcode/day24/Intruction.java,3/f/3f84935cb89e4bec7f18201ba3e946e587f46a45
+[
++src/com/adventofcode/day24/LobbyLayout.java,f/6/f6c8849eaa71e057c0d951df81fb4b766b8dd2c0
+T
+$src/com/adventofcode/day24/Main.java,e/7/e7af292f77fb02005fc4a6f0891933e61ad97773
